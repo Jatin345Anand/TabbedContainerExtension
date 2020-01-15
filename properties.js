@@ -1,11 +1,12 @@
-define(["qlik"], function(t) {
+﻿define(["qlik"], function(t) {
     var n=["qlik-show-hide-container", "qlik-tabbed-container", "qlik-trellis-container"], 
     o=t.currApp(this),
     a=null;
     function e(e) {
+        
         return {
             tab: {
-                component: "header", label: "Tab "+e
+                component: "header", label: "Tab "+e 
             }
             , label: {
                 ref: "props.tab"+e+".label", type: "string", label: "Label", defaultValue: "Tab "+e, expression: "optional"
@@ -14,7 +15,7 @@ define(["qlik"], function(t) {
                 ref:"props.tab"+e+".chart", type:"string", component:"dropdown", label:"Master Object", options:function() {
                     return getMasterObjectList()
                 }
-            }
+            } 
             , export: {
                 ref:"props.tab"+e+".export",
                 type:"boolean",
@@ -24,17 +25,17 @@ define(["qlik"], function(t) {
                     return""!==t.props["tab"+e].chart&&(a?(setTimeout(function() {
                         a=null
                     }
-                    , 1e3), a):o.getAppLayout().then(function(t) {
+                    , 1e3), a):o.getAppLayout().then(function(t) {ś
                         return a=t.layout.permissions.exportData
                     }
-                    ))
+                    )) 
                 }
             }
         }
     }
     return {
         type:"items", 
-        component:"accordion",
+        component:"accordion", 
         items: {
             settings: {
                 uses:"settings",
@@ -92,7 +93,7 @@ define(["qlik"], function(t) {
                                     value: "4", label: "Bottom"
                                 }  
                                 ]
-                            },
+                            }, 
                             dropdown: {
                                 ref:"props.num_of_tabs",
                                 type:"string",
@@ -190,7 +191,7 @@ define(["qlik"], function(t) {
                                 }, 
                                 show:function(t) {
                                     return 7<=t.props.num_of_tabs
-                                }
+                               }
                                 , items:e(7)
                             },
                             tab8: {

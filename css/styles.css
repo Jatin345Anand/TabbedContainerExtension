@@ -7,9 +7,9 @@
 .qv-object-qlik-tabbed-container article.tab-contents {
   /** 100% - tab size(40.21px) - padding of tab-content (20px * 2)**/
   height: calc(100% - 40.21px - 40px);
-  height: -o-calc(100% - 40.21px - 40px);
+  height: -o-calc(100% - 40.21px - 40px); 
   height: -webkit-calc(100% - 40.21px - 40px);
-  height: -moz-calc(100% - 40.21px - 40px);
+  height: -moz-calc(100% - 40.21px - 40px); 
 }
 
 .qv-object-qlik-tabbed-container section.tab-content, main.panel-content {
@@ -79,8 +79,8 @@
   border: 1px dashed magenta;
   /* float: left; */
   /* list-style: none; */
-  display: block;
-  position: fixed;
+  /* display: block; */
+  /* position: fixed; */
   /* bottom: 0; */
  
  
