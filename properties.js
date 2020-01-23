@@ -78,16 +78,16 @@
                                 ref:"props.select_tabsRow_view",
                                 type:"string",
                                 label:"Select View of Tab Row Bar",
-                                defaultValue:"2",
+                                defaultValue:"1",
                                 component:"dropdown",
                                 options:[ {
-                                    value: "1", label: "Left"
+                                    value: "1", label: "Top"
                                 }
                                 , {
-                                    value: "2", label: "Right"
+                                    value: "2", label: "Left"
                                 }
                                 , {
-                                    value: "3", label: "Top"
+                                    value: "3", label: "Right"
                                 } ,
                                 {
                                     value: "4", label: "Bottom"
@@ -98,7 +98,7 @@
                                 ref:"props.num_of_tabs",
                                 type:"string",
                                 label:"Number of Tabs",
-                                defaultValue:"2",
+                                defaultValue:"1",
                                 component:"dropdown",
                                 options:[ {
                                     value: "1", label: "One"

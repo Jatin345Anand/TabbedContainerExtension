@@ -1,17 +1,41 @@
 .lui-tab__text{
-  border: 1px dashed firebrick;
+  /* border: 1px dashed firebrick; */
   font-size: 5px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
-.qv-object-qlik-tabbed-container article.tab-contents {
-  /** 100% - tab size(40.21px) - padding of tab-content (20px * 2)**/
+.qv-object-qlik-tabbed-container{
+  position: relative;
+ 
+}
+article.tab-contents { 
   height: calc(100% - 40.21px - 40px);
   height: -o-calc(100% - 40.21px - 40px); 
   height: -webkit-calc(100% - 40.21px - 40px);
   height: -moz-calc(100% - 40.21px - 40px); 
 }
+ul.lui-tabset {
+  width: calc(100% - 2px);
+  /* border: 1px dashed magenta; */
+  overflow-y: visible;
 
+}
+.lui-tab{
+   width: 100px;
+  border: 1px solid yellow;
+}
+.tab-row {
+  height: 100%;
+  width: 100%;
+  /* border: 1px dashed gray; */
+}
+.tab-block {
+  height:100%;
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  z-index: 10;
+}
 .qv-object-qlik-tabbed-container section.tab-content, main.panel-content {
   /** 100% - padding size around chart(40px * 2) **/
   width: calc(100% - 80px);
@@ -73,41 +97,40 @@
   overflow: hidden;
 }
 
-.qv-object-qlik-tabbed-container ul.lui-tabset {
-  width: calc(100% - 2px);
-  /* height: 100%; */
-  border: 1px dashed magenta;
-  /* float: left; */
-  /* list-style: none; */
-  /* display: block; */
-  /* position: fixed; */
-  /* bottom: 0; */
- 
- 
-  /* solid rgba(0, 0, 0, 0.1); */
-  overflow-y: visible;
-
-}
-.qv-object-qlik-tabbed-container .lui-tab{
- 
-  width: 120px;
-  border: 1px solid yellow;
-}
-
-.qv-object-qlik-tabbed-container .tab-row {
-  height: 100%;
-  width: 100%;
-  border: 1px dashed gray;
-}
-
-.qv-object-qlik-tabbed-container .tab-block {
-  height:100%;
-  width: 100%;
-  border: 1px solid black;
+.TBL{
   position: absolute;
-  top: 50px;
-  z-index: 10;
+    top: 50px;
+    left: 0%;
+    right: 1393px;
+    font-size: 23px;
+    height: 600px;
+    width: 112px;
+    text-align: center;
 }
+.LUL{
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  list-style: none;
+  width: 100%;
+  left: 0%;
+  border: 2px solid greenyellow;
+}
+.LTL{
+  border: 2px dashed gray;
+  height: 38px;
+  padding: 5px;
+  
+  text-align: center;
+  font-size: 20px;
+  border: 2px dashed gray;
+} 
+.TCL{
+   margin: 30px;
+}
+
+
+
 
 .qv-object-qlik-tabbed-container .tab-instructions {
   margin: auto;
