@@ -78,19 +78,13 @@ define(["jquery", "qlik", "./properties", "css!./css/styles.css"], function (S, 
                 tabview = t.find("lui-tabset--fill"),
                 h = t.find("ul.lui-tabset li.lui-tab.lui-active").attr("tabnr");
             i = e["tab" + (r = null != h ? h : "1")].export;
-            console.log(tabview);
-            console.log(typeof tabview);
-            console.log(S);
+            // console.log(tabview);
+            // console.log(typeof tabview);
+            // console.log(S);
             // console.log(t[0]);
-            console.log(t);
-            console.log(e);
-            // console.log(t[0].childNodes);
-            for (let i of t[0].childNodes) {
-                console.log(i);
-            }
-            for (var i = 0; i < t[0].childNodes.length; i++) {
-                console.log(t[0].childNodes[i]);
-            }
+            // console.log(t);
+            // console.log(e);
+            // console.log(t[0].childNodes); 
             if (e.select_tabsRow_view == 1) {
                 /// TOP
                 // paddingTop
@@ -106,12 +100,12 @@ define(["jquery", "qlik", "./properties", "css!./css/styles.css"], function (S, 
                         t[0].childNodes[0].width = 'auto';
                         t[0].childNodes[0].style.position = 'absolute';
                         t[0].childNodes[0].style.top = '0px';
-                        console.log(t[0].childNodes[0].style);
+                        // console.log(t[0].childNodes[0].style);
                     }
                     if(t[0].childNodes[1]){
                         t[0].childNodes[1].style = {};
                         t[0].childNodes[1].style.paddingTop = '40px';
-                        console.log(t[0].childNodes[1].style);
+                        // console.log(t[0].childNodes[1].style);
                         if(t[0].childNodes[1].childNodes){
                             t[0].childNodes[1].childNodes[0].style = {};
                             t[0].childNodes[1].childNodes[0].style.marginLeft = '1%';
@@ -119,7 +113,7 @@ define(["jquery", "qlik", "./properties", "css!./css/styles.css"], function (S, 
                             t[0].childNodes[1].childNodes[0].style.marginTop = '0%';
                             t[0].childNodes[1].childNodes[0].style.marginBottom = '0%';
                             t[0].childNodes[1].childNodes[0].style.height = '110%';
-                            console.log(t[0].childNodes[1].childNodes[0],t[0].childNodes[1].childNodes[0].style);
+                            // console.log(t[0].childNodes[1].childNodes[0],t[0].childNodes[1].childNodes[0].style);
                         }
 
                     }
@@ -142,12 +136,12 @@ define(["jquery", "qlik", "./properties", "css!./css/styles.css"], function (S, 
                         t[0].childNodes[0].width = 'auto';
                         t[0].childNodes[0].style.position = 'absolute';
                         t[0].childNodes[0].style.bottom = '0px';
-                        console.log(t[0].childNodes[0].style);
+                        // console.log(t[0].childNodes[0].style);
                     }
                     if(t[0].childNodes[1]){
                         t[0].childNodes[1].style = {};
                         t[0].childNodes[1].style.paddingTop = '0px';
-                        console.log(t[0].childNodes[1].style);
+                        // console.log(t[0].childNodes[1].style);
                         if(t[0].childNodes[1].childNodes){
                             t[0].childNodes[1].childNodes[0].style = {};
                             t[0].childNodes[1].childNodes[0].style.marginLeft = '1%';
@@ -155,7 +149,7 @@ define(["jquery", "qlik", "./properties", "css!./css/styles.css"], function (S, 
                             t[0].childNodes[1].childNodes[0].style.marginTop = '0%';
                             t[0].childNodes[1].childNodes[0].style.marginBottom = '0%';
                             t[0].childNodes[1].childNodes[0].style.height = '110%';
-                            console.log(t[0].childNodes[1].childNodes[0].style);
+                            // console.log(t[0].childNodes[1].childNodes[0].style);
                         } 
                     }
                       
@@ -178,9 +172,9 @@ define(["jquery", "qlik", "./properties", "css!./css/styles.css"], function (S, 
                         t[0].childNodes[0].style.position = 'absolute';
                         t[0].childNodes[0].style.display = 'inline-grid';
                         t[0].childNodes[0].style.width = 'auto';
-                        t[0].childNodes[0].style.height = '100%';
+                        // t[0].childNodes[0].style.height = '100%';
                         t[0].childNodes[0].style.left = '0px';
-                        console.log(t[0].childNodes[0].style);
+                        // console.log(t[0].childNodes[0].style);
                         if(t[0].childNodes[0].childNodes){
                             for(var l=0;l<t[0].childNodes[0].childNodes.length;l++){
                                 t[0].childNodes[0].childNodes[l].width ='130px';
@@ -191,7 +185,7 @@ define(["jquery", "qlik", "./properties", "css!./css/styles.css"], function (S, 
                         t[0].childNodes[1].style = {};
                         t[0].childNodes[1].style.paddingTop = '0px';
                         t[0].childNodes[1].style.paddingLeft = '14%';
-                        console.log(t[0].childNodes[1].style);
+                        // console.log(t[0].childNodes[1].style);
                         if(t[0].childNodes[1].childNodes){
                             t[0].childNodes[1].childNodes[0].style = {};
                             t[0].childNodes[1].childNodes[0].style.marginLeft = '0%';
@@ -200,7 +194,7 @@ define(["jquery", "qlik", "./properties", "css!./css/styles.css"], function (S, 
                             t[0].childNodes[1].childNodes[0].style.marginBottom = '0%';
                             t[0].childNodes[1].childNodes[0].style.height = '110%';
                             t[0].childNodes[1].childNodes[0].style.width = '100%'
-                            console.log(t[0].childNodes[1].childNodes[0],t[0].childNodes[1].childNodes[0].style);
+                            // console.log(t[0].childNodes[1].childNodes[0],t[0].childNodes[1].childNodes[0].style);
                         }
                         
                     }
@@ -224,15 +218,15 @@ define(["jquery", "qlik", "./properties", "css!./css/styles.css"], function (S, 
                         t[0].childNodes[0].style.position = 'absolute';
                         t[0].childNodes[0].style.display = 'inline-grid';
                         t[0].childNodes[0].style.width = 'auto';
-                        t[0].childNodes[0].style.height = '100%';
+                        // t[0].childNodes[0].style.height = '100%';
                         t[0].childNodes[0].style.right = '0px';
-                        console.log(t[0].childNodes[0].style);
+                        // console.log(t[0].childNodes[0].style);
                     }
                     if(t[0].childNodes[1]){
                         t[0].childNodes[1].style = {};
                         t[0].childNodes[1].style.paddingTop = '0px';
                         t[0].childNodes[1].style.paddingRight = '0px';
-                        console.log(t[0].childNodes[1].style);
+                        // console.log(t[0].childNodes[1].style);
                         if(t[0].childNodes[1].childNodes){
                             t[0].childNodes[1].childNodes[0].style = {};
                             t[0].childNodes[1].childNodes[0].style.marginLeft = '1%';
@@ -240,7 +234,7 @@ define(["jquery", "qlik", "./properties", "css!./css/styles.css"], function (S, 
                             t[0].childNodes[1].childNodes[0].style.marginTop = '0%';
                             t[0].childNodes[1].childNodes[0].style.marginBottom = '0%';
                             t[0].childNodes[1].childNodes[0].style.height = '110%';
-                            console.log(t[0].childNodes[1].childNodes[0],t[0].childNodes[1].childNodes[0].style);
+                            // console.log(t[0].childNodes[1].childNodes[0],t[0].childNodes[1].childNodes[0].style);
                         }
                         
                     }
